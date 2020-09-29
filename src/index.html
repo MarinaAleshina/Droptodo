@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDoList</title>
+  </head>
+  <body>
+    <form class="form" name="form" novalidate>
+      <h2>ToDoList</h2>
+
+      <div class="form-control">
+        <label for="title">Task title</label>
+        <input
+          type="text"
+          id="title"
+          class="input-title input"
+          data-required="title"
+        />
+        <span>Error</span>
+      </div>
+
+      <div class="form-control">
+        <label for="body">Task body</label>
+        <input
+          type="text"
+          id="body"
+          class="input-body input"
+          data-required="body"
+        />
+        <span>Error</span>
+      </div>
+      <input type="submit" value="Add task" />
+    </form>
+    <div class="container-tasks">
+      <ul class="task-container"></ul>
+      <ul class="task-container"></ul>
+    </div>
+  </body>
+</html>
